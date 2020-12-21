@@ -1,0 +1,45 @@
+{
+  "name": "visualne-comment-plugin",
+  "version": "1.0.0",
+  "description": "Comment plugin to let users insert comments for nodes",
+  "main": "dist/visualne-comment-plugin.common.js",
+  "module": "dist/visualne-comment-plugin.esm.js",
+  "scripts": {
+    "build": "npx rollup -c",
+    "prebuild": "npm run lint && npm run types",
+    "prepublishOnly": "npm run build",
+    "publish": "npm publish --access=public",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --fix --ext .ts",
+    "types": "tsc src/index.ts --target es5 --declaration --outDir ./types --downlevelIteration --emitDeclarationOnly"
+  },
+  "keywords": [
+    "framework",
+    "node editor",
+    "Comment plugin",
+    "visual programming"
+  ],
+  "author": "Valencio Hoffman",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vamidi/visualne-comment-plugin.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.7",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint": "^7.13.0",
+    "rollup": "^2.33.2",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^3.9.7",
+    "visualne": "^1.0.11"
+  }
+}

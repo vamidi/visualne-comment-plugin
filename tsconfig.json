@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"outDir": "./dist/out-tsc",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "es2015",
+		"sourceMap": true,
+		"declaration": true,
+		"downlevelIteration": true,
+		"allowJs": true,
+		"strict": true,
+		"isolatedModules": false,
+		"esModuleInterop": true,
+		"noUnusedLocals": true,
+		"noImplicitAny": false,
+		"tslib" : [
+			"node_modules/tslib/tslib.d.ts"
+		],
+		"lib": [
+			"es2018",
+			"dom"
+		],
+		"typeRoots": [
+			"node_modules/@types"
+		]
+	},
+	"exclude": [
+		"node_modules"
+	],
+	"include": [
+		"src"
+	]
+}
