@@ -4,6 +4,7 @@
   "description": "Comment plugin to let users insert comments for nodes",
   "main": "dist/visualne-comment-plugin.common.js",
   "module": "dist/visualne-comment-plugin.esm.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "build": "npx rollup -c",
     "prebuild": "npm run lint && npm run types",

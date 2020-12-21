@@ -168,4 +168,5 @@ class Comment extends Plugin
 
 export const CommentPlugin = Comment;
 export { Comment, InlineComment, FrameComment } from './comment';
+export * from './utils';
 

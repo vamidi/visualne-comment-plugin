@@ -24,7 +24,7 @@
 			"dom"
 		],
 		"typeRoots": [
-			"node_modules/@types"
+			"types/index.d.ts"
 		]
 	},
 	"exclude": [
