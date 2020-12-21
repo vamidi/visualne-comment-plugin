@@ -1,6 +1,6 @@
 {
   "name": "visualne-comment-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Comment plugin to let users insert comments for nodes",
   "main": "dist/visualne-comment-plugin.common.js",
   "module": "dist/visualne-comment-plugin.esm.js",
