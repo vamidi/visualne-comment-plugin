@@ -3,10 +3,11 @@ import resolve from 'rollup-plugin-node-resolve';
 import sourcemaps from 'rollup-plugin-sourcemaps';
 import { terser } from "rollup-plugin-terser";
 import { eslint } from 'rollup-plugin-eslint';
+import sass from "rollup-plugin-sass";
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 const production = !process.env.ROLLUP_WATCH;
-const bundle = 'visualne-selection-plugin'
+const bundle = 'visualne-comment-plugin';
 
 module.exports = {
     // mode: 'development',
@@ -38,6 +39,9 @@ module.exports = {
         babel({
             exclude: './node_modules/**',
             extensions,
+        }),
+        sass({
+            insert: true
         }),
         production && terser(),
     ]
