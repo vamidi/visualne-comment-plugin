@@ -1,4 +1,4 @@
-import { listenWindow } from 'visualne/types/view/utils';
+import { listenWindow } from 'visualne';
 
 export class Draggable
 {

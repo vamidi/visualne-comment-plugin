@@ -6,7 +6,7 @@
   "module": "dist/visualne-comment-plugin.esm.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "build": "npx rollup -c",
+    "build": "npx rollup -c && npx rollup -c rollup.minify.config.js",
     "prebuild": "npm run lint && npm run types",
     "prepublishOnly": "npm run build",
     "publish": "npm publish --access=public",
@@ -41,6 +41,6 @@
     "rollup-plugin-sourcemaps": "^0.6.3",
     "rollup-plugin-terser": "^7.0.2",
     "typescript": "^3.9.7",
-    "visualne": "^1.0.11"
+    "visualne": "^1.1.1"
   }
 }

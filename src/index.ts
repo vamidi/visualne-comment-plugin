@@ -1,8 +1,6 @@
 import './style.sass';
 
-import { Context, Node, NodeEditor } from 'visualne';
-import { Plugin } from 'visualne/types/core/plugin';
-import { listenWindow } from 'visualne/types/view/utils';
+import { Context, Node, NodeEditor, listenWindow, Plugin } from 'visualne';
 import { EventsTypes } from 'visualne/types/events';
 
 import { CommentManager } from './manager';
@@ -11,7 +9,7 @@ import { CommentEvents, CommentPluginParams, nodesBBox } from './utils';
 
 class Comment extends Plugin
 {
-  name: string = 'context-menu';
+  name: string = 'comment-plugin';
 
   constructor(editor: NodeEditor, params: CommentPluginParams = {
     margin: 30,
